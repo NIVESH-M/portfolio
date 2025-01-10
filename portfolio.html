@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nivesh M</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background: #333;
+            color: #00bcd4;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+        .section {
+            padding: 2rem;
+            text-align: left;
+            background: #1e1e1e;
+            margin: 1rem 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(255,255,255,0.1);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        h2 {
+            color: #ff9800;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .highlight {
+            color: #00bcd4;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            background: #00bcd4;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .button:hover {
+            background: #0097a7;
+        }
+        .about-content img {
+            float: left;
+            margin-right: 20px;
+            max-width: 150px;
+            height: auto;
+            border: 2px solid #00bcd4;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(255,255,255,0.1);
+        }
+        .skills-content, .projects-content, .experience-content, .contact-content, .education-content, .achievements-content {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        .card {
+            background-color: #2b2b2b;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Nivesh M</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="container about-content">
+            <img src="images/resume_photo.png" alt="Resume Photo">
+            <p>Hi, I'm <span class="highlight">Nivesh M</span>, a passionate Computer Science Engineering student at VIT, Chennai. My expertise spans machine learning, web development, and competitive coding.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="container education-content">
+            <div class="card">
+                <p><strong>Computer Science Engineering B.Tech</strong> <span class="highlight">Vellore Institute of Technology</span>, CGPA 9.01 (2021-2025)</p>
+            </div>
+            <div class="card">
+                <p><strong>Senior Secondary:</strong> 96.6%, <strong>Higher Secondary:</strong> 95.4% <span class="highlight">Pushpalata Vidya Mandir</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="container skills-content">
+            <div class="card">
+                <p><strong>Programming Languages:</strong> Python, Java, HTML, CSS, JavaScript, C, C++, MySQL, PHP</p>
+            </div>
+            <div class="card">
+                <p><strong>Tools:</strong> Linux, Google Cloud, Canva, Cisco Packet Tracer</p>
+            </div>
+            <div class="card">
+                <p><strong>Domains:</strong> Machine Learning, Deep Learning, Web Development, Competitive Coding</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="container projects-content">
+            <div class="card">
+                <p><strong>Students Attendance System:</strong> Automated attendance tracking using face detection algorithms.</p>
+            </div>
+            <div class="card">
+                <p><strong>Vision Transformer Model:</strong> High-accuracy model for Bell’s palsy detection.</p>
+            </div>
+            <div class="card">
+                <p><strong>Cricket Statistics Handler:</strong> Data management system for cricket statistics.</p>
+            </div>
+            <div class="card">
+                <p><strong>Traffic Detector:</strong> Traffic object detection using CNN and YOLO.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="container experience-content">
+            <div class="card">
+                <p><strong>Titan Company Ltd.:</strong> Built website for incoming interns; gained foundational SAP knowledge.</p>
+            </div>
+            <div class="card">
+                <p><strong>University Clubs:</strong> Content creator, designer, and choreographer in various clubs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <h2>Achievements</h2>
+        <div class="container achievements-content">
+            <div class="card">
+                <p><strong>2nd position:</strong> College Level Mathematics Quiz.</p>
+            </div>
+            <div class="card">
+                <p><strong>Participations:</strong> Hackathons like PoseAI, Intel GenAI, Hacksing</p>
+            </div>
+            <div class="card">
+                <p><strong>Qualified:</strong> GATE 2024, JEE Advanced</p>
+            </div>
+            <div class="card">
+                <p><strong>Selection:</strong> HackWithInfy (2024) - selected as a Power programmer at Infosys.</p>
+            </div>
+            <div class="card">
+                <p><strong>Recognitions:</strong> Part of top 100 students in Raising a Mathematician Training Program, nationwide</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
